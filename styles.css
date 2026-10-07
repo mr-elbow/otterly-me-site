@@ -101,6 +101,8 @@ h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; text-align: center
   50% { transform: rotate(3deg); }
 }
 .otter-sway { animation: otter-sway 1.6s ease-in-out infinite; margin-bottom: 1rem; }
+.hero-simple .habit-line { font-size: clamp(1.4rem, 2.8vw, 2rem); margin: 1.6rem 0 0; }
+.hero-simple .habit-line em { font-style: normal; color: var(--teal-600); }
 .hero h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800; }
 .hero h1 em { font-style: normal; color: var(--teal-600); }
 .lede { font-size: 1.2rem; color: var(--muted); margin: 1.2rem 0 1.8rem; font-weight: 500; }
