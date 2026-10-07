@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Otterly Me! — A 5-minute daily journal kids love</title>
-  <meta name="description" content="Otterly Me! is a private, playful daily journal for kids ages 6–12. Reflect on the day, practice typing, and explore a web app — with everything staying on your family's device." />
+  <title>Otterly Me! — A digital journal, nothing else</title>
+  <meta name="description" content="Otterly Me! is a digital journal for kids. Everything is stored on your family's device — no accounts, no cloud, no sharing, no friends. Just a journal." />
   <link rel="icon" type="image/png" href="assets/otter-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,102 +16,88 @@
   <!-- ============ NAV ============ -->
   <nav class="nav">
     <a href="#top" class="brand">
-      <img src="assets/otter-icon.png" alt="Ollie the otter" />
+      <img src="assets/otter-icon.png" alt="Otterly Me! otter logo" />
       <span>Otterly Me!</span>
     </a>
     <div class="nav-links">
-      <a href="#skills">Why kids love it</a>
-      <a href="#how">How it works</a>
+      <a href="#why">Why</a>
       <a href="#privacy">Privacy</a>
-      <a href="#faq">FAQ</a>
+      <a href="#install">Install</a>
     </div>
-    <a class="btn btn-primary btn-sm" href="https://mr-elbow.github.io/otterly-me/" target="_blank" rel="noopener">Get it free</a>
+    <a class="btn btn-primary btn-sm" href="https://app.getotterlyme.com/" target="_blank" rel="noopener">Open the journal</a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
   </nav>
 
   <!-- ============ HERO ============ -->
   <header class="hero" id="top">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <span class="pill">🎉 Free while in beta</span>
-        <h1>The 5-minute journal kids <em>actually</em> want to open.</h1>
-        <p class="lede">
-          Otterly Me! turns the after-school wind-down into a playful daily ritual.
-          Kids reflect on their day, practice typing real sentences, and learn their
-          way around a web app — with Ollie the otter cheering them on.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary btn-lg" href="https://mr-elbow.github.io/otterly-me/" target="_blank" rel="noopener">Get it free 🦦</a>
-          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
-        </div>
-        <p class="fineprint">No app store. No sign-up. Opens right in the browser.</p>
+    <div class="hero-inner hero-simple">
+      <svg class="otter-sway" width="148" height="148" viewBox="0 0 120 120" role="img" aria-label="Otterly Me! otter">
+        <circle cx="28" cy="34" r="13" fill="#7c4a21" />
+        <circle cx="28" cy="34" r="6" fill="#a4713d" />
+        <circle cx="92" cy="34" r="13" fill="#7c4a21" />
+        <circle cx="92" cy="34" r="6" fill="#a4713d" />
+        <ellipse cx="60" cy="66" rx="42" ry="38" fill="#8b5a2b" />
+        <circle cx="26" cy="80" r="7" fill="#a4713d" opacity="0.7" />
+        <circle cx="94" cy="80" r="7" fill="#a4713d" opacity="0.7" />
+        <ellipse cx="60" cy="86" rx="24" ry="17" fill="#e8c07d" />
+        <circle cx="43" cy="58" r="7" fill="#2b1a0e" />
+        <circle cx="77" cy="58" r="7" fill="#2b1a0e" />
+        <circle cx="45.5" cy="55.5" r="2.4" fill="#ffffff" />
+        <circle cx="79.5" cy="55.5" r="2.4" fill="#ffffff" />
+        <ellipse cx="60" cy="78" rx="7" ry="5.5" fill="#3b2412" />
+        <path d="M60 83.5 Q60 90 52 91 M60 83.5 Q60 90 68 91" stroke="#3b2412" stroke-width="2.5" fill="none" stroke-linecap="round" />
+        <g stroke="#3b2412" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
+          <line x1="18" y1="78" x2="34" y2="82" />
+          <line x1="18" y1="88" x2="34" y2="87" />
+          <line x1="102" y1="78" x2="86" y2="82" />
+          <line x1="102" y1="88" x2="86" y2="87" />
+        </g>
+        <path d="M14 108 q8 -10 16 0 q8 10 16 0 q8 -10 16 0 q8 10 16 0 q8 -10 16 0" stroke="#2dd4bf" stroke-width="5" fill="none" stroke-linecap="round" />
+      </svg>
+      <h1>A digital journal, <em>nothing else.</em></h1>
+      <p class="lede">
+        Everything your child writes is stored on your family's device — and nowhere else.
+        No accounts, no cloud, no ads.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="https://app.getotterlyme.com/" target="_blank" rel="noopener">Open the journal 🦦</a>
       </div>
-      <div class="hero-art">
-        <div class="blob"></div>
-        <img class="ollie" src="assets/ollie-hero.webp" alt="Ollie the otter writing in a journal" />
-        <div class="float-card fc1">☀️ How was your day?</div>
-        <div class="float-card fc2">📸 Selfie time!</div>
-        <div class="float-card fc3">🔥 12-day streak!</div>
-      </div>
-    </div>
-    <div class="hero-stats">
-      <div><strong>5 min</strong><span>a day</span></div>
-      <div><strong>200+</strong><span>rotating questions</span></div>
-      <div><strong>100%</strong><span>private</span></div>
-      <div><strong>0</strong><span>ads · accounts · uploads</span></div>
+      <p class="fineprint">No app store. No sign-up. Opens right in the browser.</p>
     </div>
   </header>
 
   <div class="wave-divider" aria-hidden="true"></div>
 
-  <!-- ============ SKILLS ============ -->
-  <section class="section" id="skills">
-    <h2>More than a diary — <span class="hl">practice for real life</span></h2>
-    <p class="section-sub">Every day, without feeling like homework.</p>
+  <!-- ============ WHY ============ -->
+  <section class="section" id="why">
+    <h2>Turns the evening wind-down into <span class="hl">a writing habit</span></h2>
+    <p class="section-sub">Practice typing, composing full sentences and stories — all while reflecting on their day in engaging, fun, silly ways.</p>
     <div class="cards3">
       <div class="card">
-        <div class="card-emoji">🪞</div>
-        <h3>Reflect on their day</h3>
-        <p>Gratitude, feelings, favorite moments, proud moments. Gentle prompts build emotional vocabulary and a habit of looking back with kindness.</p>
-      </div>
-      <div class="card">
         <div class="card-emoji">⌨️</div>
-        <h3>Practice typing</h3>
-        <p>Open-ended questions mean real sentences on a real keyboard, every single day. Typing fluency grows one journal entry at a time.</p>
+        <h3>Real typing practice</h3>
+        <p>Full sentences on a real keyboard, every day. Fluency grows one entry at a time.</p>
       </div>
       <div class="card">
-        <div class="card-emoji">🖱️</div>
-        <h3>Learn the web</h3>
-        <p>Buttons, forms, the camera, saving work, navigating pages — digital literacy in a safe sandbox with nothing to break and no strangers.</p>
+        <div class="card-emoji">📝</div>
+        <h3>Stories, not one-word answers</h3>
+        <p>Open-ended prompts invite kids to compose full thoughts, memories, and tall tales.</p>
+      </div>
+      <div class="card">
+        <div class="card-emoji">🪞</div>
+        <h3>Reflection, the fun way</h3>
+        <p>Gratitude, feelings, favorite moments — silly questions and thoughtful ones, fresh every day.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ HOW IT WORKS ============ -->
-  <section class="section alt" id="how">
-    <h2>One tap a day, <span class="hl">five little pages</span></h2>
-    <p class="section-sub">A guided flow that takes about five minutes, start to finish.</p>
-    <div class="steps">
-      <div class="step">
-        <img src="screenshots/vitals.webp" alt="The Vitals page: weather, breakfast, and mood picker" loading="lazy" />
-        <div><span class="step-n">1</span><h3>The Vitals</h3><p>Weather, breakfast, and how they're feeling — a soft landing after school.</p></div>
-      </div>
-      <div class="step flip">
-        <img src="screenshots/selfie.webp" alt="Selfie Time page with a goofy prompt" loading="lazy" />
-        <div><span class="step-n">2</span><h3>Selfie Time</h3><p>A goofy prompt ("make a fish face!") and an optional photo for the day's page.</p></div>
-      </div>
-      <div class="step">
-        <img src="screenshots/questions.webp" alt="Today's Questions page with fresh daily questions" loading="lazy" />
-        <div><span class="step-n">3</span><h3>Today's Questions</h3><p>Fresh questions every day from a bank of 200+ — thoughtful, silly, and favorites to compare over time.</p></div>
-      </div>
-      <div class="step flip">
-        <img src="screenshots/bedtime.webp" alt="Bedtime page: one last question before you go" loading="lazy" />
-        <div><span class="step-n">4</span><h3>Bedtime</h3><p>An optional evening page with one last question: <em>what do you want to remember when you're grown up?</em></p></div>
-      </div>
-      <div class="step">
-        <img src="screenshots/celebrate.webp" alt="Celebration page with confetti and an on-this-day-in-history fact" loading="lazy" />
-        <div><span class="step-n">5</span><h3>Celebrate</h3><p>Confetti, a streak flame, and a kid-friendly "on this day in history" fact. Then it's saved to <strong>The Den</strong> — their archive of every page.</p></div>
-      </div>
+  <!-- ============ UNDER THE HOOD ============ -->
+  <section class="section alt" id="under-the-hood">
+    <h2>Where do the words go? <span class="hl">Nowhere.</span></h2>
+    <div class="tech-copy">
+      <p>Otterly Me! has no backend. There are no servers holding your child's journal, because there is nowhere for it to go. Every entry is saved in the web browser's own storage, right on your family's device — each child's journal kept separate under its own key.</p>
+      <p>The app talks to no one. No analytics, no trackers, no ads, no accounts, nothing uploaded — ever. The only things it ever downloads are the page itself and its fonts. Once it's loaded, it even works offline.</p>
+      <p>No sharing, no friends, no comments, no feed. The only person who can read your child's pages is someone holding the device — exactly like the paper diary under their pillow.</p>
     </div>
   </section>
 
@@ -145,27 +131,6 @@
     </div>
   </section>
 
-  <!-- ============ SCREENSHOTS ============ -->
-  <section class="section" id="screenshots">
-    <h2>Take a <span class="hl">peek inside</span></h2>
-    <p class="section-sub">Tap any screenshot to see it bigger.</p>
-    <div class="gallery">
-      <button class="shot" data-full="screenshots/belongsto.webp"><img src="screenshots/belongsto.webp" alt="This journal belongs to screen" loading="lazy" /><span>Claim your journal</span></button>
-      <button class="shot" data-full="screenshots/home.webp"><img src="screenshots/home.webp" alt="Home page with bookplate and streak" loading="lazy" /><span>Home</span></button>
-      <button class="shot" data-full="screenshots/vitals.webp"><img src="screenshots/vitals.webp" alt="The Vitals page" loading="lazy" /><span>The Vitals</span></button>
-      <button class="shot" data-full="screenshots/selfie.webp"><img src="screenshots/selfie.webp" alt="Selfie Time page" loading="lazy" /><span>Selfie Time</span></button>
-      <button class="shot" data-full="screenshots/questions.webp"><img src="screenshots/questions.webp" alt="Today's Questions page" loading="lazy" /><span>Today's Questions</span></button>
-      <button class="shot" data-full="screenshots/bedtime.webp"><img src="screenshots/bedtime.webp" alt="Bedtime page" loading="lazy" /><span>Bedtime</span></button>
-      <button class="shot" data-full="screenshots/celebrate.webp"><img src="screenshots/celebrate.webp" alt="Celebration page" loading="lazy" /><span>Celebrate</span></button>
-      <button class="shot" data-full="screenshots/den.webp"><img src="screenshots/den.webp" alt="The Den archive" loading="lazy" /><span>The Den</span></button>
-    </div>
-  </section>
-
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lb-close" aria-label="Close">✕</button>
-    <img id="lb-img" src="" alt="Screenshot enlarged" />
-  </div>
-
   <!-- ============ INSTALL ============ -->
   <section class="section" id="install">
     <h2>Put Otterly Me! on your <span class="hl">home screen</span></h2>
@@ -192,45 +157,6 @@
       </div>
     </div>
   </div>
-
-  <!-- ============ FAQ ============ -->
-  <section class="section alt" id="faq">
-    <h2>Questions, <span class="hl">answered</span></h2>
-    <div class="faq">
-      <details open>
-        <summary>Is it really free?</summary>
-        <p>Yes — it's free while in beta. We're sharing it with friends and family first to learn what kids love before we decide what's next.</p>
-      </details>
-      <details>
-        <summary>What ages is it for?</summary>
-        <p>It's designed for kids roughly 6–12. Younger kids can tap through the multiple-choice and mood pickers; older kids get the most out of the open-ended writing prompts.</p>
-      </details>
-      <details>
-        <summary>What devices does it work on?</summary>
-        <p>Any modern phone or tablet with a web browser. For the full app feel, add it to the home screen: on iPad, open it in Safari → Share → <em>Add to Home Screen</em>; on Android, open it in Chrome → ⋮ → <em>Install app</em>.</p>
-      </details>
-      <details>
-        <summary>Where do the journal entries go?</summary>
-        <p>They stay in the browser on your device — that's it. There are no accounts, no servers, and nothing is ever uploaded or shared. If you'd like, we can walk through exactly what that means before your kid starts.</p>
-      </details>
-      <details>
-        <summary>Can my kids share one tablet?</summary>
-        <p>Yes! Each child gets their own journal. They write their name on the "This journal belongs to…" page (in a handwritten font, like a real diary), and switching between journals takes one tap.</p>
-      </details>
-      <details>
-        <summary>Are there ads or in-app purchases?</summary>
-        <p>No. No ads, no purchases, no pop-ups asking for anything. It's a calm little corner of the internet.</p>
-      </details>
-    </div>
-  </section>
-
-  <!-- ============ FINAL CTA ============ -->
-  <section class="final-cta">
-    <img src="assets/otter-icon.png" alt="" class="cta-otter" />
-    <h2>Ready for <span class="hand">five otterly minutes</span> a day?</h2>
-    <p>Free while in beta. Takes 30 seconds to open — no sign-up, no download from an app store.</p>
-    <a class="btn btn-primary btn-lg" href="https://mr-elbow.github.io/otterly-me/" target="_blank" rel="noopener">Get Otterly Me! free 🦦</a>
-  </section>
 
   <footer>
     <p><strong>Otterly Me!</strong> — a private daily journal for kids.</p>
