@@ -221,6 +221,41 @@ h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; text-align: center
   width: 3rem; height: 3rem; border-radius: 50%; font-size: 1.3rem; cursor: pointer; font-weight: 800; color: var(--teal-800);
 }
 
+/* ---------- install ---------- */
+.install-grid { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; }
+.install-btn {
+  display: flex; align-items: center; gap: 1rem; background: #fff; border: none;
+  border-radius: 20px; padding: 1.1rem 1.8rem; box-shadow: var(--card-shadow);
+  cursor: pointer; font-family: inherit; text-align: left;
+  transition: transform .2s ease;
+}
+.install-btn:hover { transform: translateY(-4px) scale(1.02); }
+.install-emoji { font-size: 2.4rem; }
+.install-text strong { display: block; font-size: 1.25rem; color: var(--teal-800); }
+.install-text small { color: var(--muted); font-weight: 600; }
+
+.install-modal {
+  position: fixed; inset: 0; z-index: 100; display: none;
+  background: rgba(19, 78, 74, .9); align-items: center; justify-content: center; padding: 1.5rem;
+}
+.install-modal.open { display: flex; }
+.install-card {
+  background: #fff; border-radius: 24px; padding: 2rem; max-width: 760px; width: 100%;
+  max-height: 92vh; overflow-y: auto; position: relative;
+  box-shadow: 0 30px 80px rgba(0,0,0,.4);
+}
+.install-card h3 { color: var(--teal-800); font-size: 1.6rem; margin: 0 3rem .2rem 0; }
+.install-body { display: grid; grid-template-columns: 240px 1fr; gap: 1.8rem; margin-top: 1.2rem; align-items: start; }
+.install-body img { width: 100%; border-radius: 16px; box-shadow: var(--card-shadow); }
+.install-body ol { margin: 0; padding-left: 1.4rem; display: grid; gap: .9rem; }
+.install-body li { color: var(--teal-900); font-weight: 500; line-height: 1.55; }
+.install-body li::marker { color: var(--teal-500); font-weight: 800; }
+.install-body a { color: var(--teal-600); font-weight: 700; }
+@media (max-width: 640px) {
+  .install-body { grid-template-columns: 1fr; }
+  .install-body img { max-width: 220px; margin: 0 auto; }
+}
+
 /* ---------- faq ---------- */
 .faq { max-width: 760px; margin: 0 auto; display: grid; gap: 1rem; }
 .faq details {

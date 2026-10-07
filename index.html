@@ -166,6 +166,33 @@
     <img id="lb-img" src="" alt="Screenshot enlarged" />
   </div>
 
+  <!-- ============ INSTALL ============ -->
+  <section class="section" id="install">
+    <h2>Put Otterly Me! on your <span class="hl">home screen</span></h2>
+    <p class="section-sub">No app store needed — it installs like an app, straight from the browser.</p>
+    <div class="install-grid">
+      <button class="install-btn" data-os="android">
+        <span class="install-emoji">🤖</span>
+        <span class="install-text"><strong>Android</strong><small>Chrome → Add to Home screen</small></span>
+      </button>
+      <button class="install-btn" data-os="ios">
+        <span class="install-emoji">📱</span>
+        <span class="install-text"><strong>iPhone</strong><small>Safari → Add to Home Screen</small></span>
+      </button>
+    </div>
+  </section>
+
+  <div class="install-modal" id="install-modal" aria-hidden="true">
+    <div class="install-card">
+      <button class="lb-close install-close" aria-label="Close">✕</button>
+      <h3 id="install-title"></h3>
+      <div class="install-body">
+        <img id="install-img" src="" alt="" />
+        <ol id="install-steps"></ol>
+      </div>
+    </div>
+  </div>
+
   <!-- ============ FAQ ============ -->
   <section class="section alt" id="faq">
     <h2>Questions, <span class="hl">answered</span></h2>
